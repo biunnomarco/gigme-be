@@ -1,0 +1,8 @@
+POST http://localhost:5050/review/6505ef7362e4eecee5517517 HTTP/1.1
+Content-Type: application/json
+
+{
+    "rate" : 5,
+    "comment" : "Bel posto",
+    "authorArtist" : "65058a6bd8f2f05963fab112"
+}

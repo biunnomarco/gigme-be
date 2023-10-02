@@ -1,0 +1,24 @@
+POST http://localhost:5050/local/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "gallo@gmail.com",
+    "password" : " solimano",
+    "name" : "Il ghiro blu",
+    "region" : "lombardia",
+    "city" : "milano",
+    "address" : "via arno",
+    "description" : "test",
+    "localType" : ["pub", "pizzeria"],
+    "favouriteGenre" : ["blues", "jazz"],
+    "backline" : ["batteria", "chitarra", "arpa"],
+    "lat": "666",
+    "lon": "666"
+}
+
+
+#####
+PATCH http://localhost:5050/local/64fc7b2d4534c8c1383734d8/validate HTTP/1.1
+
+#####
+GET http://localhost:5050/local/filter?favouriteGenre=blues,jazz&backline=chitarra,arpa&localType=pub&region=lombardia&city=milano&lat=666&lon=666&distance=1&name=
