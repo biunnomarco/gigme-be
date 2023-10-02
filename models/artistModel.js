@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt')
 const artistSchemaModel = new mongoose.Schema({
     isValid: {
         type: Boolean,
-        default: true,
+        default: false,
     },
     role: {
         type: String,
